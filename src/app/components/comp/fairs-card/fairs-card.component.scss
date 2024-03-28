@@ -1,0 +1,31 @@
+.cardinfo{
+    background-image: linear-gradient(90deg,#187658 0%,#156E72 100%);
+    cursor: pointer;
+    position: relative;
+    .bodyinfo{
+        background-color: aliceblue;
+        border-radius: 5px;
+    }
+    &::after{
+        content: '';
+         width : 15px;
+         height: 15px;
+         position: absolute;
+         top: 50%;
+          right : -7px;
+         background-color:  #156E72 ;
+         transform: rotate(45deg);
+        
+          
+     }
+    //  .active{
+    //     content: '';
+    //      width : 15px;
+    //      height: 15px;
+    //      position: absolute;
+    //      top: 50%;
+    //       right : -7px;
+    //      background-color:  #156E72 ;
+    //     transform: rotate(45deg);
+    //  }
+} 
