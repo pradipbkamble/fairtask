@@ -9,10 +9,14 @@ import { Ifairdata } from '../../interface/fair';
 })
 export class FairsCardComponent implements OnInit {
   @Input()fairdata!:Ifairdata
+  isactiveid!:string
   constructor() { }
 
   ngOnInit(): void {
     
+  }
+  isid(id:string){
+    this.isactiveid=id
   }
 
 }

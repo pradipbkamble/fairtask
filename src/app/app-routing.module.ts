@@ -6,6 +6,7 @@ import { AboutComponent } from './components/comp/about/about.component';
 import { FairsCardComponent } from './components/comp/fairs-card/fairs-card.component';
 import { SinglefairComponent } from './components/comp/singlefair/singlefair.component';
 import { DashboardFairsComponent } from './components/comp/dashboard-fairs/dashboard-fairs.component';
+import { SinglefairService } from './components/service/singlefair.service';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
     children:[{
       path:":fairid",
       component:SinglefairComponent,
+      resolve:{
+        fairpro:SinglefairService
+      }
     }]
   }
 ];

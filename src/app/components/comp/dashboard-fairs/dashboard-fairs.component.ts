@@ -9,10 +9,14 @@ import { Ifairdata } from '../../interface/fair';
 })
 export class DashboardFairsComponent implements OnInit {
   fairs:Array<Ifairdata>=[]
+  
   constructor(private _fardataservice:FairserService) { }
 
   ngOnInit(): void {
     this.fairs=this._fardataservice.fetch()
+    
   }
+  
+
 
 }
